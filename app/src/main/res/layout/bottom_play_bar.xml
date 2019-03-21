@@ -59,7 +59,7 @@
             android:layout_width="43dp"
             android:layout_height="43dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/playbar_btn_playlist"/>
+            android:src="@drawable/playing_icon_play"/>
     </LinearLayout>
 
 
