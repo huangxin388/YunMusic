@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--透明导航栏，配合   android:fitsSystemWindows="true"使ToolBar放在透明导航栏下方-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

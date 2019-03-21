@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <com.example.yunmusic.TintToolbar
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/theme_color_primary">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            >
+
+            <ImageView
+                android:id="@+id/bar_music"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bar_net"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_music"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/bar_net"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/actionbar_disco"
+                android:clickable="true" />
+
+
+
+            <ImageView
+                android:id="@+id/bar_friends"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bar_net"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_video"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp" />
+
+
+            <ImageView
+                android:id="@+id/bar_search"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_search" />
+        </RelativeLayout>
+
+    </com.example.yunmusic.TintToolbar>
+
+    <Button
+        android:id="@+id/video"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频播放器"/>
+
+    <com.example.utils.MyViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+    </com.example.utils.MyViewPager>
+
+    <FrameLayout
+        android:id="@+id/bottom_container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

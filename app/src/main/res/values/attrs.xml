@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TintToolbar">
+        <attr name="toolbarStyle" format="reference"/>
+    </declare-styleable>
+</resources>
